@@ -137,13 +137,13 @@ main h3 {
     width: 100%;
 }
 
-main .cardbox {
+main .cardbox, main .allpost-cardbox {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-main .cardbox .card {
+main .card {
     margin-bottom: 4px;
     margin-top: 4px;
     padding: 8px;
@@ -151,15 +151,169 @@ main .cardbox .card {
     background-color: #1A254F;
 }
 
-main .cardbox .card .card-name {
+.card .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .card .card-name {
     font-family: 'Petrov-Sans';
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 8px;
 }
 
-main .cardbox .card .card-desc {
+main .card .card-data {
+    font-family: 'Petrov-Sans';
+    font-weight: 300;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+main .card .card-desc {
     font-family: 'Petrov-Sans';
     font-weight: 300;
     font-size: 18px;
+}
+
+.create-post-desc {
+    width: 100%;
+    text-align: center;
+    font-family: 'Petrov-Sans';
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.cardbox-type-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cardbox-type-post .card-type {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    background-color: #1A254F;
+    width: 100%;
+}
+
+.cardbox-type-post .card-type img {
+    background-color: #2C3B75;
+    border-radius: 16px;
+    padding: 8px;
+    width: 64px;
+    height: 64px;
+}
+
+.cardbox-type-post .card-type p {
+    font-family: 'Petrov-Sans';
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #1A254F;
+    border-radius: 16px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.searchbox input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Petrov-Sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.searchbox input::placeholder {
+    color: #7c7c7c;
+    font-family: 'Petrov-Sans';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.searchbox img {
+    background-color: #2C3B75;
+    border-radius: 16px;
+    padding: 8px;
+    width: 64px;
+    height: 64px;
+}
+
+.userbox {
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #1A254F;
+}
+
+.userbox .user-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-color: #3758D7;
+}
+
+.userbox .username-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userbox .username-text .username {
+    color: #fff;
+    font-family: 'Petrov-Sans';
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.userbox .username-text .reg-data {
+    color: #7c7c7c;
+    font-family: 'Petrov-Sans';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.cardbox nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardbox nav a {
+    font-family: 'Petrov-Sans';
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 16px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1A254F;
 }
