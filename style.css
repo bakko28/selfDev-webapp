@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'Petrov-Sans'; 
+    font-weight: 300;
+	src: url('fonts/PetrovSans-Trial-Book.otf'); 
+}
+
+@font-face {
+	font-family: 'Petrov-Sans'; 
+    font-weight: 400;
+	src: url('fonts/PetrovSans-Trial-Regular.otf'); 
+}
+
+@font-face {
+	font-family: 'Petrov-Sans'; 
+    font-weight: 500;
+	src: url('fonts/PetrovSans-Trial-SemiBold.otf'); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: grid;
+    grid-template-rows: auto 96px;
+    height: 100vh;
+    grid-template-areas: 
+        "main" 
+        "header";
+    grid-gap: 10px;
+    padding: 8px;
+    background-color: #1E1E1E;
+}
+
+@media (max-width: 678px) {
+    body {
+        display: grid;
+        grid-template-rows: auto 96px;
+        height: 100vh;
+        grid-template-areas: 
+            "main" 
+            "header";
+        grid-gap: 10px;
+        padding: 8px;
+    } 
+} */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1E1E1E;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 390px;
+    height: 844px;
+    background-color: #0A0F22;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    align-items: end;
+    justify-content: center;
+    height: 96px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #1A254F;
+}
+
+header a {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #2C3B75;
+    text-decoration: none;
+}
+
+header .create-new-post {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+header a img {
+    width: 100%;
+    height: 100%px;
+}
+
+header .create-new-post img {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+    color: #fff;
+}
+
+main::-webkit-scrollbar {
+    width: 6px;               /* ширина scrollbar */
+}
+
+main::-webkit-scrollbar-track {
+    background: #1A254F;        /* цвет дорожки */
+}
+
+main::-webkit-scrollbar-thumb {    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid #2C3B75;  /* padding вокруг плашки */
+}
+
+main h3 {
+    padding: 8px;
+    margin-bottom: 16px;
+    font-family: 'Petrov-Sans';
+    font-weight: 500;
+    font-size: 36px;
+    text-align: end;
+    width: 100%;
+}
+
+main .cardbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .cardbox .card {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 16px;
+    background-color: #1A254F;
+}
+
+main .cardbox .card .card-name {
+    font-family: 'Petrov-Sans';
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+main .cardbox .card .card-desc {
+    font-family: 'Petrov-Sans';
+    font-weight: 300;
+    font-size: 18px;
+}
